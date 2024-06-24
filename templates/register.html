@@ -2,112 +2,15 @@
 <html lang="en">
   <head>
     <title>Register</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Baloo Bhai 2', cursive;
-        background-color: #f0f0f0; /* Light gray background for a modern look */
-        color: #333; /* Dark gray text for readability */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-      }
-
-      .form-container {
-        display: none; /* Initially hidden */
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .form-popup {
-        background-color: #ffffff; /* White background for the form */
-        border-radius: 10px; /* Rounded corners for a modern feel */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        padding: 20px;
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        animation: popup 0.5s ease; /* Animation effect */
-      }
-
-      @keyframes popup {
-        0% {
-          transform: scale(0);
-          opacity: 0;
-        }
-        100% {
-          transform: scale(1);
-          opacity: 1;
-        }
-      }
-
-      .form-title {
-        font-size: 24px;
-        margin-bottom: 20px;
-        text-align: center;
-        color: #007BFF; /* Blue color for the title */
-      }
-
-      label {
-        margin-bottom: 5px;
-        font-size: 14px;
-        color: #333; /* Dark gray text */
-      }
-
-      input[type="text"],
-      input[type="password"] {
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #ccc; /* Light gray border */
-        border-radius: 5px;
-        font-size: 14px;
-        outline: none;
-        transition: border-color 0.3s;
-      }
-
-      input[type="text"]:focus,
-      input[type="password"]:focus {
-        border-color: #007BFF; /* Blue border on focus */
-      }
-
-      button {
-        background-color: #007BFF; /* Blue background */
-        color: #ffffff; /* White text */
-        border: none;
-        border-radius: 5px;
-        padding: 10px;
-        font-size: 14px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-
-      button:hover {
-        background-color: #0056b3; /* Darker blue on hover */
-      }
-    </style>
   </head>
   <body>
-      <form class="form-popup" method="post">
-        <div class="form-title">Register</div>
-        <label for="username">Username:</label>
-        <input type="text" name="username" required>
-        <label for="password">Password:</label>
-        <input type="password" name="password" required>
-        <button type="submit">Register</button>
-      </form>
-
-    <script>
-      window.onload = function() {
-        document.getElementById('formContainer').style.display = 'flex';
-      }
-    </script>
+    <form method="post">
+      <label for="username">Username:</label>
+      <input type="text" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" name="password" required>
+      <button type="submit">Register</button>
+    </form>
   </body>
 </html>
+
